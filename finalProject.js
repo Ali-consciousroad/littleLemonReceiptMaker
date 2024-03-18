@@ -87,17 +87,17 @@ function getDiscount(taxBoolean, guests) {
         if(guests < 5){discount = 5;}
         else if(guests >= 5){discount = 10;}
         console.log(`The number of guest is: ${guests}`);
-        console.log("Discount is: $" + discount);
+        console.log("Discount is: $" + discount + "\n");
     }
 
     /* Step 12: In the else condition, console log the following string: `'The second argument must be a number between 0 and 30'`. 
     Since you've finished declaring both the `getPrices()` and the `getDiscount()` functions, 
     you can now invoke the `getDiscount()` function several times, with various combinations of arguments, to check the behavior. <br>*/
     else {
-        console.log("The second argument must be a number between 0 and 30")
+        console.log("The second argument must be a number between 0 and 30 \n")
     } 
 }
 
 // Call getDiscount()
-getDiscount(true, 4);
+getDiscount(true, 40);
 getDiscount(false, 10);
